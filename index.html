@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Through My Lens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Through My Lens</h1>
+        <p>Capturing life's beautiful moments.</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#photos">My Photos</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="intro">
+            <h2>Welcome to My Photography World</h2>
+            <p>
+                Photography allows me to capture special moments,
+                explore new places and appreciate the beauty around me.
+                Every picture tells a story worth remembering.
+            </p>
+            <a href="#photos" class="button">Explore My Photos</a>
+        </section>
+
+        <section id="photos">
+            <h2>My Favourite Photos</h2>
+            <p>Here are some of the pictures that inspire me.</p>
+
+            <div class="gallery">
+                <div class="photo">
+                    <img src="https://i.pinimg.com/1200x/be/e6/9b/bee69b1dffd0a2e4baeb6668ad3f7fd5.jpg" alt="Beautiful Flower Garden">
+                    <h3>Flowers</h3>
+                    <p>Beauty can be found in small things.</p>
+                </div>
+
+                <div class="photo">
+                    <img src="https://i.pinimg.com/736x/90/3f/0a/903f0a91bdb8b5ebb314488bbe4246e1.jpg" alt="Aesthetic Nature">
+                    <h3>Nature</h3>
+                    <p>I love the peace that nature brings.</p>
+                </div>
+
+                <div class="photo">
+                    <img src="https://i.pinimg.com/736x/05/97/7e/05977e14cb7cd9ec840da32fffabee15.jpg" alt="An Art Project">
+                    <h3>Art</h3>
+                    <p>My camera helps me express my thoughts.</p>
+                </div>
+
+                <div class="photo">
+                    <img src="https://i.pinimg.com/1200x/47/92/e9/4792e94e91cc73d97bc073014c3412e0.jpg" alt="Fashion is Passion">
+                    <h3>Fashion</h3>
+                    <p>There is always something to capture.</p>
+                </div>
+
+                <div class="photo">
+                    <img src="https://i.pinimg.com/1200x/26/6e/d3/266ed30fb9f5db76c86bec59eb318637.jpg" alt="Moments to Always Cherish">
+                    <h3>Beach Moments</h3>
+                    <p>There is always somewhere new to explore.</p>
+                </div>
+
+                <div class="photo">
+                    <img src="https://i.pinimg.com/736x/f0/6d/8a/f06d8a488beb10101978bca2e19fccf3.jpg" alt="Self Beauty">
+                    <h3>Everyday Beauty</h3>
+                    <p>The little things often mean the most.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <img src="https://scontent.fnbo16-1.fna.fbcdn.net/v/t1.15752-9/840188872_1906983226848115_4996689071284183059_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=fc17b8&_nc_ohc=sUxLL6EIPBYQ7kNvwHJ3il4&_nc_oc=AdofGnPNbkQ8JVUU1Uc4iQ1oaIgJyxTGSb_sbEyJ7qFCQeaPbQyDxnSEUHfPIaf62MI&_nc_zt=23&_nc_ht=scontent.fnbo16-1.fna&_nc_ss=7b6a8&oh=03_Q7cD6gE2Fzm5o5gkyGfFJzeJ6PH-AaEpkZfKzJTTdwpTr8uQdw&oe=6AF33221" alt="Photo of Nancy" class="profile-photo">
+
+            <p>
+                Hello! My name is <strong>Nancy</strong>.
+                I am a student learning how to build websites and explore
+                technology. I enjoy discovering beautiful places,
+                capturing memorable moments and expressing creativity.
+            </p>
+            <p>
+                This website is a collection of my favourite photographs.
+                Through this project, I am learning HTML and CSS while
+                sharing the things that inspire me.
+            </p>
+            <p><em>Every picture has a story to tell.</em></p>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>Have a favourite photo? Send me a message!</p>
+
+            <form id="contact-form">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <p id="form-response"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Nancy | Through My Lens</p>
+        <p>&copy; 2026 All rights reserved.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("contact-form");
+        const response = document.getElementById("form-response");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            response.textContent =
+                "Thank you! Your form has been completed successfully.";
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>
+
+
+    
